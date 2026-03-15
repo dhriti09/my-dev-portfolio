@@ -165,3 +165,24 @@ body {
   color: var(--text) !important;
   margin: 0 10px;
 }
+
+/* Project Image Styling */
+.project.card .card-img-top {
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Prevents stretching */
+  filter: grayscale(20%) brightness(0.8); /* Blends with dark theme */
+  transition: all 0.5s ease;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Hover Effect for Project Images */
+.project.card:hover .card-img-top {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.05);
+}
+
+/* Fix for Profile Image Border */
+.profile-image {
+  border: 4px solid var(--border); 
+  box-shadow: 0 0 30px rgba(58, 134, 255, 0.3); 
+}
