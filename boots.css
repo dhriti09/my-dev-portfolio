@@ -158,4 +158,10 @@ body {
 .reveal, .reveal-delay-1, .reveal-delay-2, .reveal-delay-3 {
   opacity: 1 !important;
   transform: translateY(0) !important;
-  transition: all 0.8s ease-out;
+  visibility: visible !important;
+}
+
+  .nav-link {
+  color: var(--text) !important;
+  margin: 0 10px;
+}

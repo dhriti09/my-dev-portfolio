@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 3. Scroll Reveal Animation (Intersection Observer)
   // Added IDs for Experience and Certifications to the observer
-  const revealElements = document.querySelectorAll(".reveal, .reveal-delay-1, .reveal-delay-2, .reveal-delay-3, #experience, #certifications");
+ const revealElements = document.querySelectorAll(".reveal, .reveal-delay-1, .reveal-delay-2, .reveal-delay-3, #experience, #certifications");
   
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
