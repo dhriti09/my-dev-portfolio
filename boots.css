@@ -125,3 +125,33 @@ body {
 
 .bg-dark-2 { background-color: var(--bg-2); }
 .section-padding { padding: 100px 0; }
+
+/* Certification Icon Styling */
+#certifications .bi {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(131, 56, 236, 0.3));
+}
+
+/* Coding Profile Button Hover */
+.btn-outline-light:hover {
+  background: var(--grad);
+  border-color: transparent;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(58, 134, 255, 0.3);
+}
+
+/* Adjusting Card heights for uniformity */
+#certifications .glass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#certifications .glass:hover {
+  transform: scale(1.02);
+  border-color: #8338ec;
+}
