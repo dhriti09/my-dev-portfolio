@@ -53,7 +53,7 @@ A sleek, responsive portfolio website built to showcase my technical skills and 
 
 1. **Clone the Repo**:
 ```bash
-git clone https://github.com/dhriti09/Portfolio.git
+https://github.com/dhriti09/my-dev-portfolio.git
 
 ```
 
@@ -63,17 +63,11 @@ Simply open `index.html` in your favorite browser.
 
 ## 🌍 Contact
 
-* 
 **Author**: Dhriti Yadav 
-
-
-* 
+ 
 **Email**: [dhritiyadav0919@gmail.com]() 
-
-
-* 
+ 
 **GitHub**: [github.com/dhriti09](https://www.google.com/search?q=https://github.com/dhriti09) 
-
 
 **link** :[https://dhriti09.netlify.app/dhriti.html]
 
