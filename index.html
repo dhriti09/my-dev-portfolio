@@ -90,8 +90,7 @@ Hi, I'm <span class="stroke">Dhriti</span>
        
         <div class="d-flex gap-4 mt-5 reveal-delay-3">
            <a href="#projects" class="btn btn-gradient">Explore Projects</a>
-          
-          >
+        
         </div>
       </div>
 
@@ -595,6 +594,34 @@ Hi, I'm <span class="stroke">Dhriti</span>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="boot.js"></script>
+
+    <!-- Add this script just before the closing </body> tag -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Find all the experience cards
+            const experienceCards = document.querySelectorAll('.experience .glass');
+            
+            experienceCards.forEach(card => {
+                // For touch devices, toggle the 'is-hover' class on touch start
+                card.addEventListener('touchstart', function() {
+                    this.classList.add('is-hover');
+                });
+                
+                // Remove the class when touch ends
+                card.addEventListener('touchend', function() {
+                    // Use a small delay so the animation finishes before removing the style
+                    setTimeout(() => {
+                        this.classList.remove('is-hover');
+                    }, 400); // Matches the CSS transition time (0.4s)
+                });
+
+                // Handle cases where touch might be canceled (like scrolling)
+                card.addEventListener('touchcancel', function() {
+                    this.classList.remove('is-hover');
+                });
+            });
+        });
+    </script>
   </body>
 </html>
 
