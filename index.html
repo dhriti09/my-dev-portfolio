@@ -1,627 +1,382 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dhriti Yadav | Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="boots.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
- <form name="contact" data-netlify="true" hidden>
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <textarea name="message"></textarea>
-</form>
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#topNav"
-    data-bs-smooth-scroll="true"
-    tabindex="0"
-  >
-    <nav
-      id="topNav"
-      class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top blur-nav"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">DY.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navContent"
-          title="Toggle navigation menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-  <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-  <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-  <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-  <li class="nav-item ms-lg-3">
-    <a href="#contact" class="btn btn-gradient btn-sm">Contact Me</a>
-  </li>
-</ul>
-        </div>
-      </div>
-    </nav>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dhriti Yadav — Software Developer &amp; ML Enthusiast</title>
+<meta name="description" content="Portfolio of Dhriti Yadav — Software Developer, Full Stack Learner and ML Enthusiast, Final Year CSE student at United Institute of Technology, Prayagraj." />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
 
-   <!-- Naya Hero Section Code -->
-<header id="home" class="hero d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      
-      <!-- !!! Yahan बदलाव hai: Image ab text se pehle load hogi (mobile ke liye) !!! -->
-      <div class="col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
-        <div class="">
-          <img
-            src="assets/your-profile-image.jpeg"
-            alt="Dhriti Yadav"
-            class="profile-image"
-          />
+  <!-- ================= NAVBAR ================= -->
+  <nav class="nav" id="topNav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#home"><span class="prompt">&gt;</span> dhriti.dev</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">≡</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"><span class="path">~/</span>about</a></li>
+        <li><a href="#experience"><span class="path">~/</span>experience</a></li>
+        <li><a href="#projects"><span class="path">~/</span>projects</a></li>
+        <li><a href="#skills"><span class="path">~/</span>skills</a></li>
+        <li><a href="#certifications"><span class="path">~/</span>certs</a></li>
+        <li><a class="nav-cta" href="#contact">contact --send</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <p class="hero-tag">Software Developer <span>·</span> Full Stack Learner <span>·</span> ML Enthusiast</p>
+        <h1>Hi, I'm <span class="accent">Dhriti Yadav</span>.<br>I build practical, AI-powered software.</h1>
+        <p class="hero-desc">Final year CSE student at United Institute of Technology, Prayagraj, building software that combines clean interfaces with efficient backends — with hands-on experience across computer vision, machine learning, NLP and REST APIs.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-solid">View Projects</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-ghost">Download Resume</a>
         </div>
       </div>
 
-      <div class="col-lg-6 order-2 order-lg-1">
-        <p class="text-uppercase small text-secondary mb-2 reveal">
-        Frontend Developer • UI Designer • Competitive Programmer • IEEE Member
-        </p>
-        <h1 class="display-2 fw-bold hero-title">
-Hi, I'm <span class="stroke">Dhriti</span>
-        </h1>
-        <p class="lead text-secondary mt-3 reveal-delay-2 hero-desc">
-        Passionate about building responsive web applications, crafting intuitive user experiences, and continuously growing as a Full-Stack Developer.
-        </p> 
-       
-        <div class="d-flex gap-4 mt-5 reveal-delay-3">
-           <a href="#projects" class="btn btn-gradient">Explore Projects</a>
-        
+      <div class="term reveal">
+        <div class="term-bar">
+          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+          <span class="term-title">whoami.sh</span>
         </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="hero-glow"></div>
-</header>
-
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-         <div class="col-lg-6">
-            <h2 class="display-5 fw-bold reveal about-heading">
-              About <span class="stroke">Me</span>
-            </h2>
-           <p class="text-secondary mb-4 reveal-delay-1 about-text">
-              I am a B.Tech CSE student at United Institute of Technology. A
-              Web Developer and an active IEEE member, I focus on
-              building responsive, user-centric applications while maintaining a
-              strong foundation in competitive programming.
-            </p>
-           <div class="glass p-4 reveal-delay-2 profile-card">
-  <h6 class="fw-bold text-primary mb-3">
-    <i class="bi bi-code-slash me-2"></i>Competitive Coding Profiles:
-  </h6>
-<div class="d-flex flex-wrap align-items-center gap-3 mb-3">
-  <a href="https://leetcode.com/u/dhriti09/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill">
-    <i class="bi bi-terminal me-1"></i> LeetCode (1625)
-  </a>
-  <a href="https://www.codechef.com/users/dhriti09" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill">
-    <i class="bi bi-award me-1"></i> CodeChef (1542★)
-  </a>
-  <a href="assets/resume.pdf" target="_blank" class="btn btn-gradient btn-sm rounded-pill">
-    <i class="bi bi-file-earmark-person"></i> Resume
-  </a>
-</div>
-  <ul class="small text-secondary mt-3 mb-0">
-    <li>Solved 200+ Problems across platforms </li>
-    <li>1st Prize, E-BOX TOP CODERS 2025-26 </li>
-  </ul>
-</div>
-          </div>
-          <div class="col-lg-6">
-          <div class="row g-3 reveal">
-              <div class="row text-center g-3">
-             <div class="col-6">
-    <div class="glass p-4 text-center about-stat">
-        <span class="h2 fw-bold">10+</span>
-        <div class="small text-secondary">Projects</div>
-    </div>
-</div>
-
-<div class="col-6">
-    <div class="glass p-4 text-center about-stat">
-        <span class="h2 fw-bold">1st</span>
-        <div class="small text-secondary">E-BOX Prize</div>
-    </div>
-</div>
-
-<div class="col-6">
-    <div class="glass p-4 text-center about-stat">
-        <span class="h2 fw-bold">200+</span>
-        <div class="small text-secondary">DSA Problems</div>
-    </div>
-</div>
-
-<div class="col-6">
-    <div class="glass p-4 text-center about-stat">
-        <span class="h2 fw-bold">7.52</span>
-        <div class="small text-secondary">CGPA</div>
-    </div>
-</div>
-              </div>
-            </div>
+        <div class="term-body">
+          <p class="term-line"><span class="ln">1</span>  <span class="term-key">$</span> <span data-type="whoami --dhriti">whoami --dhriti</span><span class="cursor"></span></p>
+          <p class="term-line"><span class="ln">2</span>  name: <span class="term-str">"Dhriti Yadav"</span></p>
+          <p class="term-line"><span class="ln">3</span>  role: <span class="term-str">"Final Year CSE, UIT Prayagraj"</span></p>
+          <p class="term-line"><span class="ln">4</span>  focus: <span class="term-str">"Full-Stack Dev · ML · Computer Vision"</span></p>
+          <div class="term-stats">
+            <div class="term-stat"><div class="n">1625</div><div class="l">LeetCode</div></div>
+            <div class="term-stat"><div class="n">2★</div><div class="l">CodeChef (peak 1542)</div></div>
+            <div class="term-stat"><div class="n">200+</div><div class="l">Problems Solved</div></div>
+            <div class="term-stat"><div class="n">12+</div><div class="l">Projects Shipped</div></div>
           </div>
         </div>
       </div>
-    </section>
-<section id="experience" class="section-padding" style="background-color: var(--bg);">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-5 reveal">Professional <span class="stroke">Experience</span></h2>
-    
-    <!-- Responsive Row -->
-    <div class="row g-4 justify-content-center">
-      
-      <!-- Card 1 -->
-      <div class="col-lg-6 col-md-12">
-        <div class="glass p-4 h-100 reveal">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <h5 class="text-primary fw-bold mb-0">IEEE Member</h5>
-            <span class="experience-date">Nov 2025 – Present</span>
-          </div>
-          <p class="small text-secondary mt-2 mb-0">Engaged in professional networking and technical workshops at United Institute of Technology, collaborating on community-driven technical projects and hackathons.</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-lg-6 col-md-12">
-        <div class="glass p-4 h-100 reveal">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <h5 class="text-primary fw-bold mb-0">Data Science in Python Training</h5>
-            <span class="experience-date">Jun 2024 – Jul 2024</span>
-          </div>
-          <p class="small text-secondary mt-2 mb-0">Training at United Institute of Technology; built projects and learnt new technologies.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-lg-6 col-md-12">
-        <div class="glass p-4 h-100 reveal">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <h5 class="text-primary fw-bold mb-0">Web Developer Intern</h5>
-            <span class="experience-date">Jun 2025 – Jul 2025</span>
-          </div>
-          <p class="small text-secondary mt-2 mb-0">Remote Internship at Code Resite. Improved responsive front-end and back-end design using HTML, CSS, and JavaScript.</p>
-        </div>
-      </div>
-      
     </div>
-  </div>
-</section>
-    <section id="projects" class="section-padding bg-dark-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-between mb-5">
-      <h2 class="display-5 fw-bold m-0 reveal">My <span class="stroke">Projects</span></h2>
-      <a href="https://github.com/dhriti09" target="_blank" class="btn btn-gradient">View GitHub</a>
-    </div>
+  </header>
 
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <a href="https://github.com/dhriti09/Air-Quality-Index-Prediction-using-Python-master.git" target="_blank" class="text-decoration-none">
-          <div class="card project glass h-100">
-            <div class="card-body">
-              <img src="assets/aqi-project.jpg" class="card-img-top" alt="AQI Prediction">
-              <span class="badge mb-2">Machine Learning</span>
-              <h5 class="card-title text-white">Air Quality Prediction</h5>
-              <p class="card-text text-secondary">AQI prediction tool using XGBoost and Flask with a React.js frontend.</p>
-              <div class="text-primary small mt-3">Click to view Repo <i class="bi bi-arrow-right"></i></div>
-            </div>
-          </div>
-        </a>
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h2>A CS student who ships <br>and competes.</h2>
+        <div class="about-text" style="margin-top:20px;">
+          <p>I'm a <strong>Final Year Computer Science and Engineering</strong> student at <strong>United Institute of Technology, Prayagraj</strong>, with a strong interest in <strong>software development</strong>, <strong>machine learning</strong>, and <strong>full-stack web development</strong>.</p>
+          <p>I enjoy building practical software that combines clean user interfaces with efficient backend systems. My projects have given me hands-on experience in computer vision, machine learning, NLP, and REST API development using Python and JavaScript technologies. Alongside development, I sharpen my problem-solving through competitive programming and keep exploring new technologies by building real-world projects.</p>
+          <p style="color:var(--muted); font-size:.92rem;">Open to: Software Development · AI/ML Internships · Frontend Roles · Open Source Collaboration</p>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><div class="n">12+</div><div class="l">Projects</div></div>
+          <div class="stat"><div class="n">1st</div><div class="l">E-BOX Prize</div></div>
+          <div class="stat"><div class="n">200+</div><div class="l">DSA Problems</div></div>
+          <div class="stat"><div class="n">7.52</div><div class="l">CGPA</div></div>
+        </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <a href="https://github.com/dhriti09/Airline-Management-System.git" target="_blank" class="text-decoration-none">
-          <div class="card project glass h-100">
-            <img src="assets/c6f1e862fcfc0f1abfbdd4a732089a99.jpg" class="card-img-top" alt="al">
-            <div class="card-body">
-              <span class="badge mb-2">C++ & HTML , CSS</span>
-              <h5 class="card-title text-white">Airline Management</h5>
-              <p class="card-text text-secondary">Full-stack booking system with C++ backend logic and responsive UI.</p>
-              <div class="text-primary small mt-3">Click to view Repo <i class="bi bi-arrow-right"></i></div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="https://github.com/dhriti09/naruto-vs-sasuke.git" target="_blank" class="text-decoration-none">
-          <div class="card project glass h-100">
-            <img src="assets/anim naroto.jpg" class="card-img-top" alt="AQI Prediction">
-            <div class="card-body">
-              <span class="badge mb-2">Python</span>
-              <h5 class="card-title text-white">Naruto vs Sasuke</h5>
-              <p class="card-text text-secondary">2D combat game using Pygame, implementing OOP and custom physics.</p>
-              <div class="text-primary small mt-3">Click to view Repo <i class="bi bi-arrow-right"></i></div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="https://github.com/dhriti09/Socialize.git" target="_blank" class="text-decoration-none">
-          <div class="card project glass h-100">
-            <img src="assets/6 tools om zakelijke social media accounts te beheren - Invalshoek.jpg" class="card-img-top" alt="AQI Prediction">
-            <div class="card-body">
-              <span class="badge mb-2">HTML ,CSS ,JS ,UI/UX</span>
-              <h5 class="card-title text-white">Socialize Dashboard</h5>
-              <p class="card-text text-secondary">Responsive social media UI with real-time theme customization.</p>
-              <div class="text-primary small mt-3">Click to view Repo <i class="bi bi-arrow-right"></i></div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="https://github.com/dhriti09/NovaSky.git" target="_blank" class="text-decoration-none">
-          <div class="card project glass h-100">
-            <img src="assets/Weather.jpg" class="card-img-top" alt="AQI Prediction">
-            <div class="card-body">
-              <span class="badge mb-2"> HTML ,CSS ,JS </span>
-              <h5 class="card-title text-white">NovaSky</h5>
-              <p class="card-text text-secondary">Real-time weather application integrating the OpenWeatherMap API.</p>
-              <div class="text-primary small mt-3">Click to view Repo <i class="bi bi-arrow-right"></i></div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="https://github.com/dhriti09/Let-s-Draw.git" target="_blank" class="text-decoration-none">
-          <div class="card project glass h-100">
-            <img src="assets/download.jpg" class="card-img-top" alt="AQI Prediction">
-            <div class="card-body">
-              <span class="badge mb-2">JavaScript</span>
-              <h5 class="card-title text-white">Let-s-Draw</h5>
-              <p class="card-text text-secondary">Interactive drawing app built with p5.js and HTML5 Canvas API.</p>
-              <div class="text-primary small mt-3">Click to view Repo <i class="bi bi-arrow-right"></i></div>
-            </div>
-          </div>
-        </a>
+      <div class="profile-card reveal">
+        <h4><span class="dot"></span> Competitive coding profiles</h4>
+        <div class="profile-links">
+          <a class="chip" href="https://leetcode.com/u/dhriti09/" target="_blank" rel="noopener noreferrer">LeetCode (1625)</a>
+          <a class="chip" href="https://www.codechef.com/users/dhriti09" target="_blank" rel="noopener noreferrer">CodeChef (2★, peak 1542)</a>
+          <a class="chip solid" href="assets/resume.pdf" target="_blank">Resume ↓</a>
+        </div>
+        <ul>
+          <li>Solved 200+ problems across platforms</li>
+          <li>1st Prize, E-BOX Top Coders 2025–26</li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- ================= SKILLS ================= -->
-<section id="skills" class="section-padding bg-dark-2">
-<div class="container">
-   <div class="d-flex align-items-center justify-content-between mb-5">
-    <h2 class="display-5 fw-bold m-0 reveal">Skills</h2>
-   </div>
-
-
-
-<div class="row g-4">
-
-
-<div class="glass p-4">
-
-    
-   <div class="skills-container">
-
-    <!-- Languages -->
-    <div class="skill-category">
-        <h5>Languages</h5>
-        <div class="badge-wrapper">
-            <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
-            <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
-            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-        </div>
-    </div>
-
-    <!-- Frontend Development -->
-    <div class="skill-category">
-        <h5>Frontend Development</h5>
-        <div class="badge-wrapper">
-            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-            <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-            <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
-            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-        </div>
-    </div>
-
-    <!-- Backend & Databases -->
-    <div class="skill-category">
-        <h5>Backend & Databases</h5>
-        <div class="badge-wrapper">
-            <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-            <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" alt="Express.js">
-            <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-            <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-            <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
-            <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-            <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-        </div>
-    </div>
-
-    <!-- Data Science & Machine Learning -->
-    <div class="skill-category">
-        <h5>Data Science & Machine Learning</h5>
-        <div class="badge-wrapper">
-            <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
-            <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-            <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
-            <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" alt="Matplotlib">
-            <img src="https://img.shields.io/badge/XGBoost-EC6B23?style=for-the-badge" alt="XGBoost">
-        </div>
-    </div>
-
-    <!-- Tools & Platforms -->
-    <div class="skill-category">
-        <h5>Tools & Platforms</h5>
-        <div class="badge-wrapper">
-            <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-            <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code">
-            <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
-            <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
-            <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" alt="Canva">
-        </div>
-    </div>
-
-</div>
-
-                  
-
-    </div>
-</div>
-
-</div>
-</section>
-
-
-   <section id="certifications" class="section-padding bg-dark-2">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold">
-        Certifications & <span class="stroke">Achievements</span>
-      </h2>
-
-      <!-- 🔥 DRIVE LINK BUTTON -->
-      <a href="https://drive.google.com/drive/u/0/folders/1FNvK9ryY9bIyf4SBJf84upEubxyCLjTK" target="_blank" 
-         class="btn btn-gradient mt-3">
-        <i class="bi bi-folder2-open"></i> View All Certificates
-      </a>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- 1 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-patch-check-fill h3 text-primary"></i>
-          <h5 class="text-white mt-2">E-BOX Top Coder</h5>
-          <p class="small text-secondary">1st Prize in TOP CODERS 2025-26.</p>
-        </div>
-      </div>
-
-      <!-- 2 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-award h3 text-success"></i>
-          <h5 class="text-white mt-2">HackerRank Certification</h5>
-          <p class="small text-secondary">Problem Solving & Python Certified.</p>
-        </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-code-slash h3 text-warning"></i>
-          <h5 class="text-white mt-2">Data Science Training</h5>
-          <p class="small text-secondary">Python, Pandas, NumPy, Visualization.</p>
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-laptop h3 text-info"></i>
-          <h5 class="text-white mt-2">Web Development</h5>
-          <p class="small text-secondary">HTML, CSS, JS project-based learning.</p>
-        </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-bar-chart h3 text-danger"></i>
-          <h5 class="text-white mt-2">Machine Learning Basics</h5>
-          <p class="small text-secondary">Intro to ML algorithms & models.</p>
-        </div>
-      </div>
-
-      <!-- 6 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-cpu h3 text-primary"></i>
-          <h5 class="text-white mt-2">Python Programming</h5>
-          <p class="small text-secondary">Core Python + problem solving.</p>
-        </div>
-      </div>
-
-      <!-- 7 -->
-      <div class="col-md-4">
-        <div class="glass p-4 h-100">
-          <i class="bi bi-lightning-charge h3 text-warning"></i>
-          <h5 class="text-white mt-2">Coding Competition</h5>
-          <p class="small text-secondary">Participated in hackathons & contests.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
- <section id="contact" class="section-padding">
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience">
     <div class="container">
-       <div class="glass contact-card reveal">
-            <h2 class="text-center mb-5">Get In Touch</h2>
-
-           <div class="row g-4 align-items-center">
-
-                <!-- Left Side -->
-          <!-- Left Side -->
-<div class="col-lg-4 d-flex align-items-center">
-
-    <div class="contact-info">
-
-        <h4 class="mb-4">Contact Information</h4>
-
-    
-<div class="contact-info-item mb-3">
-    <i class="bi bi-geo-alt-fill text-primary"></i>
-    <span>Prayagraj, Uttar Pradesh</span>
-</div>
-
-<div class="contact-info-item mb-3">
-    <i class="bi bi-envelope-fill text-primary"></i>
-    <span>dhritiyadav0919@gmail.com</span>
-</div>
-
-        <div class="d-flex gap-3 mt-4">
-            <a href="https://www.linkedin.com/in/dhriti-yadav-6614002a5"
-               target="_blank"
-               class="btn btn-outline-light rounded-circle">
-                <i class="bi bi-linkedin"></i>
-            </a>
-
-            <a href="https://github.com/dhriti09"
-               target="_blank"
-               class="btn btn-outline-light rounded-circle">
-                <i class="bi bi-github"></i>
-            </a>
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked and learned.</h2>
+      </div>
+      <div class="log">
+        <div class="log-item reveal">
+          <div class="log-head">
+            <h3>Web Developer Intern <span style="color:var(--muted); font-weight:400;">— Code Resite Pvt. Ltd.</span></h3>
+            <span class="log-date">Jun 2025 – Jul 2025</span>
+          </div>
+          <p>Worked on backend development for web applications while collaborating with the development team to improve application functionality and maintain code quality. Developed backend APIs, integrated databases for efficient data storage and retrieval, used Git for version control, and assisted in debugging.</p>
         </div>
-
+        <div class="log-item reveal">
+          <div class="log-head">
+            <h3>Python Training <span style="color:var(--muted); font-weight:400;">— United Institute of Technology</span></h3>
+            <span class="log-date">Jun 2023 – Jul 2023</span>
+          </div>
+          <p>Completed institutional training focused on Python programming fundamentals and problem-solving — covering core Python, data structures, OOP, and programming fundamentals.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-</div>
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal" style="display:flex; align-items:flex-end; justify-content:space-between; max-width:none;">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Things I've built.</h2>
+        </div>
+        <a href="https://github.com/dhriti09" target="_blank" class="btn btn-ghost">View GitHub</a>
+      </div>
 
-                <!-- Right Side -->
-              <div class="col-lg-8 contact-form">
-
-                    <form
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
-                        netlify-honeypot="bot-field"
-                        action="/thank-you.html">
-
-                        <input type="hidden" name="form-name" value="contact">
-
-                        <p hidden>
-                            <label>
-                                Don't fill this out:
-                                <input name="bot-field">
-                            </label>
-                        </p>
-
-                        <div class="mb-3">
-                            <input
-                                type="text"
-                                name="name"
-                                class="form-control bg-transparent text-white border-secondary"
-                                placeholder="Your Name"
-                                required>
-                        </div>
-
-                        <div class="mb-3">
-                            <input
-                                type="email"
-                                name="email"
-                                class="form-control bg-transparent text-white border-secondary"
-                                placeholder="Your Email"
-                                required>
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea
-                                name="message"
-                                rows="5"
-                                class="form-control bg-transparent text-white border-secondary"
-                                placeholder="Write your message..."
-                                style="resize: none;"
-                                required></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            class="btn btn-gradient w-100">
-                            Send Message
-                        </button>
-
-                    </form>
-
-                </div>
-    </div>
+      <div class="projects-grid">
+        <div class="pcard reveal">
+          <div class="pcard-tab"><span>aqi-predictor</span><span>python</span></div>
+          <div class="pcard-thumb"><img src="assets/aqi-project.jpg" alt="Air Quality Index Predictor"></div>
+          <div class="pcard-body">
+            <h3>Air Quality Index Predictor</h3>
+            <p>ML web app to predict AQI using XGBoost and Flask, with a React.js frontend.</p>
+            <div class="pcard-links">
+              <a href="https://github.com/dhriti09/Air-Quality-Index-Predictor" target="_blank" class="pcard-foot">Repo →</a>
+              <a href="https://air-quality-index-prediction-using.onrender.com" target="_blank" class="pcard-foot">Live demo →</a>
             </div>
+          </div>
         </div>
+
+        <a href="https://github.com/dhriti09/Fake-News-Detector" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>fake-news-detector</span><span>python</span></div>
+          <div class="pcard-thumb"><img src="assets/fake-news-project.jpg" alt="Fake News Detector"></div>
+          <div class="pcard-body">
+            <h3>Fake News Detector</h3>
+            <p>ML-based fake news detection web app using Streamlit, Scikit-learn and a TF-IDF vectorizer to predict whether an article is real or fake.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/Library-Management-system" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>library-mgmt</span><span>flask</span></div>
+          <div class="pcard-thumb"><img src="assets/library-project.jpg" alt="Library Management System"></div>
+          <div class="pcard-body">
+            <h3>Library Management System</h3>
+            <p>Responsive system built with Flask, SQLite and Bootstrap 5 to manage books, borrowing, returns, donations and issued-book records.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/Dynamic-blog" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>dynamic-blog</span><span>django</span></div>
+          <div class="pcard-thumb"><img src="assets/blog-project.jpg" alt="Dynamic Blog"></div>
+          <div class="pcard-body">
+            <h3>Dynamic Blog</h3>
+            <p>A blog application built with Django, featuring a modular project structure, custom templates and an SQLite backend.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/BOOK-STORE" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>book-store</span><span>php</span></div>
+          <div class="pcard-thumb"><img src="assets/bookstore-project.jpg" alt="Book Store"></div>
+          <div class="pcard-body">
+            <h3>Book Store</h3>
+            <p>Lightweight e-commerce bookstore built with PHP and MySQL, with a shopping cart, user authentication and profile management.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/astra-chatbot" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>astra</span><span>js</span></div>
+          <div class="pcard-thumb"><img src="assets/astra-project.jpg" alt="ASTRA Chatbot"></div>
+          <div class="pcard-body">
+            <h3>ASTRA Chatbot</h3>
+            <p>Voice-activated virtual assistant using the Web Speech API to recognize voice commands and respond with synthesized speech.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/audiomotion" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>audiomotion</span><span>js</span></div>
+          <div class="pcard-thumb"><img src="assets/audiomotion-project.jpg" alt="Audiomotion"></div>
+          <div class="pcard-body">
+            <h3>Audiomotion</h3>
+            <p>Interactive audiovisual experience generating colorful animations and sound from user input, combining vector graphics with audio.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/3d-image-carousel" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>3d-carousel</span><span>css</span></div>
+          <div class="pcard-thumb"><img src="assets/carousel-project.jpg" alt="3D Image Carousel"></div>
+          <div class="pcard-body">
+            <h3>3D Image Carousel</h3>
+            <p>Responsive 3D perspective image carousel with a smooth 360° auto-rotating animation and a glassmorphism UI.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/Gesture-Volume-Control" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>gesture-volume</span><span>opencv</span></div>
+          <div class="pcard-thumb"><img src="assets/gesture-project.jpg" alt="Gesture Volume Control"></div>
+          <div class="pcard-body">
+            <h3>Gesture Volume Control</h3>
+            <p>Controls system volume using hand gestures — no mouse, no keyboard — built with OpenCV and Mediapipe for real-time hand tracking.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/naruto-vs-sasuke.git" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>naruto-vs-sasuke</span><span>python</span></div>
+          <div class="pcard-thumb"><img src="assets/naruto-project.jpg" alt="Naruto vs Sasuke"></div>
+          <div class="pcard-body">
+            <h3>Naruto vs Sasuke</h3>
+            <p>2D combat game using Pygame, implementing OOP and custom physics.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/NovaSky.git" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>novasky</span><span>api</span></div>
+          <div class="pcard-thumb"><img src="assets/novasky-project.jpg" alt="NovaSky Weather App"></div>
+          <div class="pcard-body">
+            <h3>NovaSky</h3>
+            <p>Real-time weather application integrating the OpenWeatherMap API.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dhriti09/Let-s-Draw.git" target="_blank" class="pcard reveal">
+          <div class="pcard-tab"><span>lets-draw</span><span>js</span></div>
+          <div class="pcard-thumb"><img src="assets/draw-project.jpg" alt="Let's Draw App"></div>
+          <div class="pcard-body">
+            <h3>Let's Draw</h3>
+            <p>Interactive drawing app built with p5.js and HTML5 Canvas API.</p>
+            <div class="pcard-foot">View repo →</div>
+          </div>
+        </a>
+
+        <div class="pcard reveal">
+          <div class="pcard-tab"><span>festive-demand-ai</span><span>wip</span></div>
+          <div class="pcard-thumb" style="display:flex; align-items:center; justify-content:center; color:var(--muted); font-family:var(--mono); font-size:.8rem;">building…</div>
+          <div class="pcard-body">
+            <h3>Hyperlocal Festive-Aware Demand AI</h3>
+            <p>AI-powered demand forecasting system to estimate product demand during festive seasons using historical trends and contextual retail data — helping small retailers make better inventory decisions.</p>
+            <div class="pcard-links">
+              <span class="pcard-foot" style="color:var(--muted);">🚧 Work in progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer class="py-4 text-center text-secondary small">
-    © <span id="year"></span>  Dhriti Yadav • Designed & Developed by Dhriti
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="boot.js"></script>
 
-   
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Find all the experience cards
-            const experienceCards = document.querySelectorAll('.experience .glass');
-            
-            experienceCards.forEach(card => {
-                // For touch devices, toggle the 'is-hover' class on touch start
-                card.addEventListener('touchstart', function() {
-                    this.classList.add('is-hover');
-                });
-                
-                // Remove the class when touch ends
-                card.addEventListener('touchend', function() {
-                    // Use a small delay so the animation finishes before removing the style
-                    setTimeout(() => {
-                        this.classList.remove('is-hover');
-                    }, 400); // Matches the CSS transition time (0.4s)
-                });
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>My stack.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block reveal">
+          <h4>Web Development &amp; Design</h4>
+          <div class="tag-wrap">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+            <span class="tag">React</span><span class="tag">Bootstrap</span><span class="tag">Tailwind CSS</span><span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-block reveal">
+          <h4>Backend &amp; Database</h4>
+          <div class="tag-wrap">
+            <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">Flask</span>
+            <span class="tag">Spring Boot</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-block reveal">
+          <h4>Data Science &amp; Machine Learning</h4>
+          <div class="tag-wrap">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-Learn</span>
+            <span class="tag">XGBoost</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-block reveal">
+          <h4>Languages &amp; Tools</h4>
+          <div class="tag-wrap">
+            <span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Git</span>
+            <span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">VS Code</span><span class="tag">Render</span><span class="tag">Netlify</span><span class="tag">Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                // Handle cases where touch might be canceled (like scrolling)
-                card.addEventListener('touchcancel', function() {
-                    this.classList.remove('is-hover');
-                });
-            });
-        });
-    </script>
-  </body>
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-head reveal" style="display:flex; align-items:flex-end; justify-content:space-between; max-width:none;">
+        <div>
+          <p class="eyebrow">Certifications</p>
+          <h2>Achievements &amp; credentials.</h2>
+        </div>
+        <a href="https://drive.google.com/drive/u/0/folders/1FNvK9ryY9bIyf4SBJf84upEubxyCLjTK" target="_blank" class="btn btn-ghost">View all certificates</a>
+      </div>
+      <div class="cert-grid">
+        <div class="cert reveal"><div class="ic">01</div><h4>E-BOX Top Coder</h4><p>Winner, E-BOX Top Coders 2025–26.</p></div>
+        <div class="cert reveal"><div class="ic">02</div><h4>Competitive Programming</h4><p>200+ DSA problems solved across LeetCode &amp; CodeChef.</p></div>
+        <div class="cert reveal"><div class="ic">03</div><h4>Python Programming</h4><p>Core Python fundamentals &amp; problem solving.</p></div>
+        <div class="cert reveal"><div class="ic">04</div><h4>Machine Learning</h4><p>Scikit-Learn based ML certification.</p></div>
+        <div class="cert reveal"><div class="ic">05</div><h4>Full Stack Web Development</h4><p>End-to-end web development certification.</p></div>
+        <div class="cert reveal"><div class="ic">06</div><h4>Git &amp; Version Control</h4><p>Collaborative development with Git.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk.</h2>
+        <p style="color:var(--muted); margin-top:14px;">Open to internships, collaborations and interesting problems to solve.</p>
+
+        <div style="margin-top:30px;">
+          <div class="contact-info-item"><span class="k">location</span> Prayagraj, Uttar Pradesh</div>
+          <div class="contact-info-item"><span class="k">email</span> dhritiyadav0919@gmail.com</div>
+        </div>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/dhriti-yadav-6614002a5" target="_blank" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/dhriti09" target="_blank" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+
+      <form class="reveal" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Send message</button>
+        <p class="form-note">Submissions go to your Netlify dashboard — make sure email notifications are turned on there (see README).</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Dhriti Yadav — built with HTML, CSS &amp; JS
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
-
