@@ -3,7 +3,6 @@
 document.documentElement.classList.add("js-anim");
 
 document.addEventListener("DOMContentLoaded", () => {
-
   // Footer year
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -21,28 +20,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelector(".nav-links");
   if (toggle && links) {
     toggle.addEventListener("click", () => links.classList.toggle("open"));
-    links.querySelectorAll("a").forEach(a =>
-      a.addEventListener("click", () => links.classList.remove("open"))
-    );
+    links
+      .querySelectorAll("a")
+      .forEach((a) =>
+        a.addEventListener("click", () => links.classList.remove("open")),
+      );
   }
 
   // Scroll reveal (with fallback for older/unsupported browsers)
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    revealEls.forEach(el => io.observe(el));
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+    revealEls.forEach((el) => io.observe(el));
   } else {
-    revealEls.forEach(el => el.classList.add("in"));
+    revealEls.forEach((el) => el.classList.add("in"));
   }
 
-  // Terminal typing effect in hero
+  // Terminal typing effect (only runs if a [data-type] element exists)
   const typeTarget = document.querySelector("[data-type]");
   if (typeTarget) {
     const full = typeTarget.getAttribute("data-type");
@@ -64,7 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     const encode = (data) =>
       Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .map(
+          (key) =>
+            encodeURIComponent(key) + "=" + encodeURIComponent(data[key]),
+        )
         .join("&");
 
     form.addEventListener("submit", (e) => {
@@ -90,5 +97,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
   }
-
 });
