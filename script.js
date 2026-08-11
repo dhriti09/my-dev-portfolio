@@ -19,12 +19,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
   if (toggle && links) {
-    toggle.addEventListener("click", () => links.classList.toggle("open"));
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      links.classList.toggle("open");
+    });
     links
       .querySelectorAll("a")
       .forEach((a) =>
         a.addEventListener("click", () => links.classList.remove("open")),
       );
+
+    // Close the menu on any click/tap outside the nav
+    document.addEventListener("click", (e) => {
+      if (!links.classList.contains("open")) return;
+      if (links.contains(e.target) || toggle.contains(e.target)) return;
+      links.classList.remove("open");
+    });
+
+    // Close on Escape too
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") links.classList.remove("open");
+    });
   }
 
   // Scroll reveal (with fallback for older/unsupported browsers)

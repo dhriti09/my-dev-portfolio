@@ -18,6 +18,7 @@
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">≡</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about"><span class="path">~/</span>about</a></li>
+        <li><a href="#education"><span class="path">~/</span>education</a></li>
         <li><a href="#experience"><span class="path">~/</span>experience</a></li>
         <li><a href="#projects"><span class="path">~/</span>projects</a></li>
         <li><a href="#skills"><span class="path">~/</span>skills</a></li>
@@ -79,7 +80,7 @@
         <div class="about-text" style="margin-top:20px;">
           <p>I'm a <strong>Final Year CSE</strong> student at <strong>United Institute of Technology, Prayagraj</strong>, interested in software development, machine learning, and full-stack web development.</p>
           <p>I like building projects to learn — mostly web apps, with a few in computer vision and ML. Alongside that, I practice competitive programming and keep pushing my problem-solving on LeetCode and CodeChef.</p>
-          <p>I'm also an active <strong>IEEE member</strong>, and I've helped organize technical events at college — planning, coordinating and running them alongside my coursework and projects.</p>
+          <p>I'm also an active <strong>IEEE member</strong>, and I've helped organize technical events at college — including <strong>ENIGMA XII</strong> and <strong>ENIGMA XIII</strong> — planning, coordinating and running them alongside my coursework and projects.</p>
         </div>
         <div class="stat-row">
           <div class="stat"><div class="n">12+</div><div class="l">Projects</div></div>
@@ -88,9 +89,62 @@
         </div>
       </div>
 
-      <div class="about-photo reveal">
-        <img src="assets/c6f1e862fcfc0f1abfbdd4a732089a99.jpg"
-             alt="Coding workspace with multiple screens" loading="lazy">
+   <div class="profile-card reveal about-card">
+  <h4><span class="dot"></span> hackathons.log</h4>
+
+  <ul>
+    <li>
+      <span class="fact-k">SIH</span>
+      Smart India Hackathon — Worked on an <strong>AI-powered movie booking system</strong>; team shortlisted for the college presentation round.
+    </li>
+
+```
+<li>
+  <span class="fact-k">HackQuest</span>
+  48-hour hackathon with <strong>Samyukta </strong> — worked on an educational platform with an integrated chatbot.
+</li>
+
+<li>
+  <span class="fact-k">HackDiwas</span>
+  48-hour hackathon — developed <strong>StudBuddy</strong>, an educational platform with further feature implementation.
+</li>
+```
+
+  </ul>
+
+ 
+</div>
+
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background.</h2>
+      </div>
+      <div class="log">
+        <div class="log-item reveal">
+          <div class="log-head">
+            <h3>B.Tech, Computer Science &amp; Engineering <span style="color:var(--muted); font-weight:400;">— United Institute of Technology, Prayagraj</span></h3>
+            <span class="log-date">2023 – 2027</span>
+          </div>
+          <p>Affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU). Currently in final year, maintaining a CGPA of 7.52.</p>
+        </div>
+        <div class="log-item reveal">
+          <div class="log-head">
+            <h3>Intermediate (XII) <span style="color:var(--muted); font-weight:400;">— S.D.I.C., Pratappur, Prayagraj</span></h3>
+            <span class="log-date">2023</span>
+          </div>
+        </div>
+        <div class="log-item reveal">
+          <div class="log-head">
+            <h3>High School (X) <span style="color:var(--muted); font-weight:400;">— Central Academy, Prayagraj</span></h3>
+            <span class="log-date">2020</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -103,9 +157,26 @@
         <h2>Where I've worked and learned.</h2>
       </div>
       <div class="log">
+     <div class="log-item log-item--current reveal">
+  <div class="log-head">
+    <h3>
+      IoT AI Internship
+      <span style="color:var(--muted); font-weight:400;">— Emertxe Information Technologies</span>
+    </h3>
+    <span class="log-date">Ongoing</span>
+  </div>
+
+  <p>
+    Working on <strong>Edge AI Based Smart EV Charging Station Optimizer</strong>,
+    focusing on IoT, real-time data processing, and edge AI applications for
+    smarter EV charging. Gaining practical experience in IoT systems,
+    real-time application development, and industry-oriented AI solutions.
+  </p>
+</div>
+
         <div class="log-item reveal">
           <div class="log-head">
-            <h3>AI Internship <span style="color:var(--muted); font-weight:400;">— IBM</span></h3>
+            <h3>Artificial Intelligence Intern <span style="color:var(--muted); font-weight:400;">— IBM</span></h3>
             <span class="log-date">Jun 2026 – Jul 2026</span>
           </div>
           <p>Worked on AI-focused projects, gaining hands-on exposure to applied machine learning workflows and tooling as part of the internship program.</p>
@@ -138,7 +209,7 @@
   <!-- ================= PROJECTS ================= -->
   <section id="projects">
     <div class="container">
-      <div class="section-head reveal" style="display:flex; align-items:flex-end; justify-content:space-between; max-width:none;">
+      <div class="section-head section-head--row reveal">
         <div>
           <p class="eyebrow">Projects</p>
           <h2>Things I've built.</h2>
@@ -151,7 +222,9 @@
         <!-- 1. Hyperlocal Festive-Aware Demand AI -->
         <div class="pcard reveal">
           <div class="pcard-tab"><span>festive-demand-ai</span><span>wip</span></div>
-          <div class="pcard-thumb" style="display:flex; align-items:center; justify-content:center; color:var(--muted); font-family:var(--mono); font-size:.8rem;">building…</div>
+          <div class="pcard-thumb pcard-thumb--wip">
+            <span class="wip-tag"><span class="dot"></span> in progress — code compiling</span>
+          </div>
           <div class="pcard-body">
             <h3>Hyperlocal Festive-Aware Demand AI</h3>
             <p>AI-powered demand forecasting system to estimate product demand during festive seasons using historical trends and contextual retail data — helping small retailers make better inventory decisions.</p>
@@ -303,8 +376,8 @@
           <h4>Backend &amp; Database</h4>
           <div class="tag-wrap">
             <span class="tag"><i class="devicon-nodejs-plain colored"></i>Node.js</span>
-            <span class="tag"><i class="devicon-express-original colored"></i>Express.js</span>
-            <span class="tag"><i class="devicon-flask-original colored"></i>Flask</span>
+            <span class="tag"><i class="devicon-express-original"></i>Express.js</span>
+            <span class="tag"><i class="devicon-flask-original"></i>Flask</span>
             <span class="tag"><i class="devicon-spring-original colored"></i>Spring Boot</span>
             <span class="tag"><i class="devicon-php-plain colored"></i>PHP</span>
             <span class="tag"><i class="devicon-mysql-plain colored"></i>MySQL</span>
@@ -337,7 +410,7 @@
             <span class="tag"><i class="devicon-vscode-plain colored"></i>VS Code</span>
             <span class="tag">Render</span>
             <span class="tag"><i class="devicon-netlify-plain colored"></i>Netlify</span>
-            <span class="tag"><i class="devicon-vercel-original colored"></i>Vercel</span>
+            <span class="tag"><i class="devicon-vercel-original"></i>Vercel</span>
           </div>
         </div>
       </div>
@@ -347,7 +420,7 @@
   <!-- ================= CERTIFICATIONS ================= -->
   <section id="certifications">
     <div class="container">
-      <div class="section-head reveal" style="display:flex; align-items:flex-end; justify-content:space-between; max-width:none;">
+      <div class="section-head section-head--row reveal">
         <div>
           <p class="eyebrow">Certifications</p>
           <h2>Achievements &amp; credentials.</h2>
