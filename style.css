@@ -1281,3 +1281,29 @@ footer {
     font-size: 16px; /* prevents iOS auto-zoom on focus */
   }
 }
+
+/* =================== TABLET / SPLIT SCREEN NAVBAR =================== */
+@media (min-width: 641px) and (max-width: 1050px) {
+
+  .nav-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nav-links {
+    gap: 0;
+    font-size: 0.72rem;
+    flex-shrink: 0;
+  }
+
+  .nav-links a {
+    padding: 7px 7px;
+    white-space: nowrap;
+  }
+
+  .nav-links .nav-cta {
+    padding: 8px 9px;
+    white-space: nowrap;
+  }
+
+}
