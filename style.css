@@ -598,9 +598,7 @@ textarea:focus-visible {
   position: relative;
 }
 .about-card li {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+  display: block;
   padding: 12px 0;
   border-bottom: 1px dashed var(--line);
   color: var(--paper);
@@ -612,11 +610,19 @@ textarea:focus-visible {
   padding-bottom: 0;
 }
 .about-card .fact-k {
+  display: block;
+  margin-bottom: 3px;
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--teal);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+.about-card .focus-note {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
 }
 
 .stat-row {
@@ -739,6 +745,9 @@ textarea:focus-visible {
 }
 .pcard:hover {
   transform: translateY(-6px);
+  border-color: var(--amber-dim);
+}
+.pcard--featured {
   border-color: var(--amber-dim);
 }
 .pcard-tab {
