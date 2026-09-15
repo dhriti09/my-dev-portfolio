@@ -1,235 +1,57 @@
-````markdown
----
+# dhriti.dev — Portfolio Website
 
-## `./portfolio`
+A terminal/dev-log themed personal portfolio built with plain HTML, CSS and JavaScript — no framework, no build step.
 
-🌐 **Live Portfolio:**
-**https://dhriti09.netlify.app**
+## Tech stack
 
-The portfolio follows a dark **terminal / code-editor inspired interface**, with subtle animations, project cards, competitive-programming stats and a responsive layout.
+- HTML5, CSS3 (custom properties, CSS Grid/Flexbox, no framework)
+- Vanilla JavaScript (ES6+)
+- [Devicon](https://devicon.dev/) for skill icons
+- Netlify Forms for the contact form backend
+- Deployed on [Netlify](https://www.netlify.com/)
 
-### Built with
+## Project structure
 
-```text
-HTML5
-CSS3
-JavaScript
-Netlify Forms
-Google Fonts
+```
+.
+├── index.html      # All page markup/sections
+├── style.css       # All styling
+├── script.js       # Nav, scroll reveal, typing effect, contact form handling
+└── assets/         # Images (profile photo, project thumbnails, resume PDF)
 ```
 
-No framework. No unnecessary dependencies.
+## Running locally
 
-Just a lightweight frontend focused on speed, clarity and personality.
+No build tools or dependencies required.
 
----
+1. Clone the repo
+   ```
+   git clone https://github.com/dhriti09/<repo-name>.git
+   cd <repo-name>
+   ```
+2. Open `index.html` directly in a browser, or serve it locally:
+   ```
+   npx serve .
+   ```
 
-## `$ ls ./projects`
+> Note: the contact form only works when served by Netlify (it depends on Netlify's form-detection and submission handling). Locally it will attempt the submission and show a "failed" state.
 
-### 01 · Hyperlocal Festive-Aware Demand AI 🚧
+## Deployment
 
-> **Work in progress**
+The site is deployed on Netlify:
 
-AI-powered demand forecasting system designed to estimate product demand during festive seasons using historical trends and contextual retail data.
+1. Push changes to the connected Git branch
+2. Netlify auto-builds (static site, no build command needed) and detects the `<form data-netlify="true">` in `index.html` at deploy time
+3. Enable email notifications for form submissions under **Site settings → Forms → Form notifications** in the Netlify dashboard
 
-**Goal:** Help small retailers make smarter inventory decisions.
+## Author
 
----
+**Dhriti Yadav**
+Final-year B.Tech CSE student, United Institute of Technology, Prayagraj
+- GitHub: [@dhriti09](https://github.com/dhriti09)
+- LinkedIn: [dhriti-yadav](https://www.linkedin.com/in/dhriti-yadav-6614002a5)
+- Email: dhritiyadav0919@gmail.com
 
-### 02 · Gesture Volume Control 🖐️
+## License
 
-Real-time system volume control using hand gestures.
-
-**Tech:** Python · OpenCV · MediaPipe
-
-> No mouse. No keyboard. Just hand gestures.
-
-[View Repository](https://github.com/dhriti09/Gesture-Volume-Control)
-
----
-
-### 03 · Air Quality Index Predictor 🌫️
-
-Machine-learning web application for predicting AQI using XGBoost.
-
-**Tech:** Python · XGBoost · Flask · React.js
-
-[View Repository](https://github.com/dhriti09/Air-Quality-Index-Predictor) · [Live Demo](https://air-quality-index-prediction-using.onrender.com)
-
----
-
-### 04 · Fake News Detector 📰
-
-ML-based web application that predicts whether a news article is real or fake using text classification.
-
-**Tech:** Python · Scikit-learn · TF-IDF · Streamlit
-
-[View Repository](https://github.com/dhriti09/Fake-News-Detector)
-
----
-
-### 05 · Library Management System 📚
-
-Responsive library management system for handling books, borrowing, returns, donations and issued-book records.
-
-**Tech:** Flask · SQLite · Bootstrap 5
-
-[View Repository](https://github.com/dhriti09/Library-Management-system)
-
----
-
-### 06 · Naruto vs Sasuke 🎮
-
-A 2D combat game built to explore object-oriented programming, game logic and custom physics.
-
-**Tech:** Python · Pygame · OOP
-
-[View Repository](https://github.com/dhriti09/naruto-vs-sasuke)
-
----
-
-### 07 · ASTRA Chatbot 🤖
-
-Voice-activated virtual assistant capable of recognizing voice commands and responding with synthesized speech.
-
-**Tech:** JavaScript · Web Speech API
-
-[View Repository](https://github.com/dhriti09/astra-chatbot)
-
----
-
-### 08 · 3D Image Carousel 🎨
-
-Responsive 3D perspective image carousel featuring smooth 360° rotation and a glassmorphism-inspired interface.
-
-**Tech:** HTML · CSS · JavaScript
-
-[View Repository](https://github.com/dhriti09/3d-image-carousel)
-
----
-
-### 09 · NovaSky ☁️
-
-Real-time weather application using live weather data from the OpenWeatherMap API.
-
-**Tech:** HTML · CSS · JavaScript · REST API
-
-[View Repository](https://github.com/dhriti09/NovaSky)
-
----
-
-### 10 · Book Store 📖
-
-Lightweight e-commerce bookstore with shopping cart functionality, authentication and profile management.
-
-**Tech:** PHP · MySQL
-
-[View Repository](https://github.com/dhriti09/BOOK-STORE)
-
----
-
-## `$ cat skills.txt`
-
-### Web Development
-
-`HTML5` · `CSS3` · `JavaScript` · `React` · `Bootstrap` · `Tailwind CSS`
-
-### Backend & Databases
-
-`Node.js` · `Express.js` · `Flask` · `Spring Boot` · `PHP`
-`MySQL` · `MongoDB` · `SQLite`
-
-### Machine Learning & Data
-
-`Python` · `Pandas` · `NumPy` · `Scikit-learn` · `XGBoost`
-`OpenCV` · `MediaPipe` · `Streamlit`
-
-### Languages & Tools
-
-`C` · `C++` · `Java` · `Git` · `GitHub` · `Postman`
-`VS Code` · `Render` · `Netlify` · `Vercel`
-
----
-
-## `$ ./stats`
-
-<p align="center">
-
-| Metric              |     Result    |
-| :------------------ | :-----------: |
-| 🧩 DSA Problems     |    **200+**   |
-| 🟠 LeetCode Rating  |    **1625**   |
-| ⭐ CodeChef          |     **2★**    |
-| 📈 CodeChef Peak    |    **1542**   |
-| 🏆 E-BOX Top Coders | **1st Prize** |
-| 📦 Projects         |    **12+**    |
-| 🎓 CGPA             |    **7.52**   |
-
-</p>
-
----
-
-## `$ git log --experience`
-
-### Web Developer Intern
-
-**Code Resite Pvt. Ltd.**
-`Jun 2025 – Jul 2025`
-
-Worked on backend development, API development, database integration, debugging and Git-based development workflows.
-
-### Python Training
-
-**United Institute of Technology**
-`Jun 2023 – Jul 2023`
-
-Training focused on Python fundamentals, data structures, OOP and problem-solving.
-
----
-
-## `$ cat philosophy.txt`
-
-```text
-Build → Break → Debug → Learn → Repeat
-```
-
-I believe the best way to learn technology is to build something with it.
-
-Not every project needs to be perfect.
-
-Some projects teach you architecture.
-Some teach you debugging.
-Some teach you what NOT to do.
-
-All of them move you forward.
-
----
-
-## `$ connect`
-
-<p align="center">
-
-<a href="https://dhriti09.netlify.app">
-  <img src="https://img.shields.io/badge/Portfolio-dhriti09.netlify.app-ffb454?style=for-the-badge&logo=googlechrome&logoColor=0a0d0c">
-</a>
-
-<a href="https://github.com/dhriti09">
-  <img src="https://img.shields.io/badge/GitHub-dhriti09-181717?style=for-the-badge&logo=github">
-</a>
-
-<a href="https://www.linkedin.com/in/dhriti-yadav-6614002a5">
-  <img src="https://img.shields.io/badge/LinkedIn-Dhriti%20Yadav-0A66C2?style=for-the-badge&logo=linkedin">
-</a>
-
-</p>
-
-<p align="center">
-  <i>Open to internships, collaborations and interesting problems to solve.</i>
-</p>
-
----
-
-<p align="center">
-  <sub>Built with HTML, CSS & JavaScript · © 2026 Dhriti Yadav</sub>
-</p>
-```
+This project is personal portfolio source code. Feel free to reference it, but please don't republish it as your own portfolio content.
